@@ -1,0 +1,24 @@
+.list-group {
+  .list-group-item {
+    cursor: pointer;
+    color: rgba(0, 123, 255, 0.5);
+    border: none !important;
+  }
+  .count-chip {
+    padding: 0px 8px;
+    left: 5px;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    background-color: #a3a3a3;
+    color: #fff;
+  }
+
+  .selected-card {
+    color: #fff;
+  }
+
+  .selected-chip {
+    background-color: #ffff !important;
+    color: #000;
+  }
+}

@@ -1,0 +1,7 @@
+<h4>Applets</h4>
+<div *ngIf="applets.length === 0">No applets found.</div>
+<div *ngFor="let applet of applets" class="card mb-2">
+  <div class="card-body">
+    {{ applet.name }}
+  </div>
+</div>

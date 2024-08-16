@@ -1,0 +1,16 @@
+<ul class="list-group">
+  <li
+    *ngFor="let category of categories"
+    class="list-group-item"
+    [class.active]="category.name === selectedCategory"
+    [ngClass]="{ 'selected-card': category.name === selectedCategory }"
+    (click)="selectCategory(category.name)"
+  >
+    {{ category.name }}
+    <span
+      class="count-chip"
+      [ngClass]="{ 'selected-chip': category.name === selectedCategory }"
+      >{{ category.count }}</span
+    >
+  </li>
+</ul>

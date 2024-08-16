@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 style="margin-bottom: 1.5rem">Library</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <h4>Categories</h4>
+      <app-search (search)="updateSearch($event)"></app-search>
+      <app-category-list
+        [categories]="filteredCategories"
+        [selectedCategory]="selectedCategory"
+        (categorySelected)="selectCategory($event)"
+      >
+      </app-category-list>
+    </div>
+    <div class="col-md-8">
+      <app-applet-list [applets]="filteredApplets"></app-applet-list>
+    </div>
+  </div>
+  <button (click)="addBigData(10, 1000)">Add Big Data</button>
+</div>
